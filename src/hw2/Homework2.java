@@ -36,23 +36,55 @@ public class Homework2 {
 			e++;
 		}
 		
-		System.out.println();
+		System.out.println("\n");
 				
 //阿文很熱衷大樂透(1 ～ 49)，但他不喜歡有4的數字，不論是個位數或是十位數。請設計一隻程式，
 //輸出結果為阿文可以選擇的數字有哪些？總共有幾個？
-		for (int x = 0; (x < 4); ++x) {
-			for (int y = 0; y <= 9; y++) {
-				if (y != 4) { 
-					System.out.print(x + "" + y + " ");
-				}
+		
+		for (int xx = 1; xx <= 39; xx++) {
+			if (xx == 4 || xx == 14 || xx == 24 || xx == 34) {
+				System.out.print("");
+			} else {
+				System.out.print(xx +" ");
 			}
 		}
-	}
+		
+		System.out.println("\n");
+		
+		
+//		開頭有00
+//		for (int x = 0; (x < 4); ++x) {
+//			for (int y = 0; y <= 9; y++) {
+//				if (y != 4) { 
+//					System.out.print(x + "" + y + " ");
+//				}
+//			}
+//		}
+		
+		System.out.println("\n");
+	
 		
 //請設計一隻Java程式，輸出結果為以下：
+		for (int q = 1; q <= 10; q++) {
+			for (int w = 1; w <= 11-q; w++) {
+				System.out.print(w + " ");
+			}
+			System.out.println();
+		}
+		
+		System.out.println("\n");
 		
 		
-//請設計一隻Java程式，輸出結果為以下：
+//請設計一隻Java程式，輸出結果為以下：		
+		String[] str = {"A", "B", "C", "D", "E", "F"};
 		
+		for (int aa = 0; aa <= 5; aa++) {
+			for (int bb = 0; bb <= 0+aa; bb++) {
+				System.out.print(str[aa]);
+			}
+			System.out.println();
+		}
+		
+	}	
 		
 }
