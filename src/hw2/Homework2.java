@@ -40,19 +40,17 @@ public class Homework2 {
 				
 //阿文很熱衷大樂透(1 ～ 49)，但他不喜歡有4的數字，不論是個位數或是十位數。請設計一隻程式，
 //輸出結果為阿文可以選擇的數字有哪些？總共有幾個？
-		
-		for (int xx = 1; xx <= 39; xx++) {
-			if (xx == 4 || xx == 14 || xx == 24 || xx == 34) {
-				System.out.print("");
-			} else {
-				System.out.print(xx +" ");
+		for (int no = 1; no <= 49; no++) {
+			
+			int lastno = no % 10; //取餘數是否為4
+			int firstno = no / 10; //取整數是否為4
+			
+			if (lastno != 4 && firstno !=4) {
+				System.out.print(no + " ");
 			}
 		}
-		
-		System.out.println("\n");
-		
-		
-//		開頭有00
+				
+//		flawed, 開頭有00
 //		for (int x = 0; (x < 4); ++x) {
 //			for (int y = 0; y <= 9; y++) {
 //				if (y != 4) { 
