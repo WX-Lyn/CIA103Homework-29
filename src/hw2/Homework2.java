@@ -31,6 +31,7 @@ public class Homework2 {
 		int e = 1;
 		int f = 0;
 		while (e <= 10) {
+			
 			f = (int)Math.pow(e,2);
 			System.out.print(f + " ");
 			e++;

@@ -107,8 +107,7 @@ public class Homework05 {
 		System.out.println("本次隨機產生驗證碼為:");
 		rand: 
 		for (int count = 1; count <= 8; count++) { // 正確範圍48-57, 65-90, 97-122 (不正確範圍58-64, 91-96)
-			int maxloop = 0;
-			while (maxloop == 0) {
+			while (true) {
 				int rand = (int) (Math.random() * 75) + 48;
 				if (rand >= 58 && rand <= 64) {
 					continue;
